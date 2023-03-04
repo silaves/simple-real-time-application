@@ -1,12 +1,12 @@
 const config = {
-  apiHost: "http://localhost:8002",
-  apiClient: "/api/client",
-  apiProduct: "/api/product",
+  apiHost: import.meta.env.VITE_API_BASE_URL,
+  apiClient: import.meta.env.VITE_API_CLIENT,
+  apiProduct: import.meta.env.VITE_API_PRODUCT,
   apiItem: "/api/item",
   apiCategory: "/api/category",
-  apiAuthLogin: "/api/auth/sign-in",
-  apiAuthRegister: "/api/auth/sign-up",
-  nameUserToken: "userToken",
+  apiAuthLogin: import.meta.env.VITE_API_AUTH_LOGIN,
+  apiAuthRegister: import.meta.env.VITE_API_AUTH_REGISTER,
+  nameUserToken: import.meta.env.VITE_API_NAME_TOKEN,
 };
 
 export default config;
